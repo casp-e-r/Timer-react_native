@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-native";
 import { TouchableOpacity } from "react-native";
 import { View, Text, StyleSheet } from "react-native";
 
@@ -10,30 +11,40 @@ const BottomNavBar: React.FC<Props> = () => {
   const completeTask = () => {};
   return (
     <View style={styles.container}>
-      <TouchableOpacity activeOpacity={0.5} onPress={() => completeTask()}>
-        <View style={styles.box}>
-          <Text style={styles.text}>1</Text>
-        </View>
+      <TouchableOpacity
+        style={styles.box}
+        activeOpacity={0.5}
+        onPress={() => completeTask()}
+      >
+        <Text style={styles.text}>1</Text>
       </TouchableOpacity>
-      <TouchableOpacity activeOpacity={0.5} onPress={() => completeTask()}>
-        <View style={styles.box}>
-          <Text style={styles.text}>2</Text>
-        </View>
+      <TouchableOpacity
+        style={styles.box}
+        activeOpacity={0.5}
+        onPress={() => completeTask()}
+      >
+        <Text style={styles.text}>2</Text>
       </TouchableOpacity>
-      <TouchableOpacity activeOpacity={0.5} onPress={() => completeTask()}>
-        <View style={styles.box}>
-          <Text style={styles.text}>3</Text>
-        </View>
+      <TouchableOpacity
+        style={styles.box}
+        activeOpacity={0.5}
+        onPress={() => completeTask()}
+      >
+        <Text style={styles.text}>3</Text>
       </TouchableOpacity>
-      <TouchableOpacity activeOpacity={0.5} onPress={() => completeTask()}>
-        <View style={styles.box}>
-          <Text style={styles.text}>4</Text>
-        </View>
+      <TouchableOpacity
+        style={styles.box}
+        activeOpacity={0.5}
+        onPress={() => completeTask()}
+      >
+        <Text style={styles.text}>4</Text>
       </TouchableOpacity>
-      <TouchableOpacity activeOpacity={0.5} onPress={() => completeTask()}>
-        <View style={styles.box}>
-          <Text style={styles.text}>5</Text>
-        </View>
+      <TouchableOpacity
+        style={styles.box}
+        activeOpacity={0.5}
+        onPress={() => completeTask()}
+      >
+        <Text style={styles.text}>5</Text>
       </TouchableOpacity>
     </View>
   );
@@ -46,9 +57,17 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     width: "100%",
     gap: 4,
+    borderRadius: 20,
+    borderWidth: 0.4,
+    borderColor: "red",
+    paddingTop: 10,
+    paddingRight: 0,
+    paddingBottom: 10,
+    paddingLeft: 0,
   },
   box: {
-    backgroundColor: "#ccc",
+    backgroundColor: "red",
+    height:50,
     padding: 10,
     width: 60,
   },

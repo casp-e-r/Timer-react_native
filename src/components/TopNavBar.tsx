@@ -7,7 +7,7 @@ interface Props {
   //   name: string;
 }
 
-const BottomNavBar: React.FC<Props> = () => {
+const TopNavBar: React.FC<Props> = () => {
   const completeTask = () => {};
   return (
     <View style={styles.container}>
@@ -78,4 +78,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default BottomNavBar;
+export default TopNavBar;
